@@ -1,0 +1,164 @@
+.outTestimonials {
+    position: relative;
+    /* overflow: hidden; */
+    .right {
+        position: absolute;
+        right: -7%;
+        top: 65%;
+        width: 58px;
+        height: 58px;
+        border-radius: 8px;
+        border: 1px solid #262626;
+        background-color: #ffffff;
+        padding: 20px;
+        cursor: pointer;
+        img {
+            display: block;
+            margin-top: 18%;
+        }
+    }
+    .left {
+        position: absolute;
+        left: -7%;
+        top: 65%;
+        width: 58px;
+        height: 58px;
+        border-radius: 8px;
+        border: 1px solid #262626;
+        background-color: #ffffff;
+        padding: 20px;
+        cursor: pointer;
+        img {
+            display: block;
+            margin-top: 18%;
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .outTestimonials {
+        .right {
+            position: absolute;
+            top: 103%;
+            right: 40%;
+            width: 58px;
+            height: 58px;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            background-color: #ffffff;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .left {
+            position: absolute;
+            top: 103%;
+            left: 40%;
+            width: 58px;
+            height: 58px;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            background-color: #ffffff;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .ourtestcontainer {
+            .cardTesContainer {
+                padding: 20px 0 10px 0;
+                max-width: 70%;
+            }
+        }
+    }
+}
+.ourtestcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 95%;
+    .cardTesContainer {
+        background-color: #ffffff;
+        box-shadow: 6px 6px 0px 2px #1e1e1e;
+        border-radius: 12px;
+        border: 2px solid #262626;
+        padding: 40px;
+        height: 440px;
+        max-height: 462px;
+        min-width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* gap: 2%; */
+
+        .niContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .img {
+                padding: 16px 0px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #fff5f0;
+                width: 80px;
+                height: 80px;
+                border: 2px solid #262626;
+            }
+        }
+        .starcontainer {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            gap: 5px;
+            margin: 0;
+        }
+    }
+    p {
+        width: 90%;
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        color: #333333;
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 768px) {
+    .outTestimonials {
+        .right {
+            position: absolute;
+            top: 100%;
+            right: 30%;
+            width: 58px;
+            height: 58px;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            background-color: #ffffff;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .left {
+            position: absolute;
+            top: 100%;
+            left: 30%;
+            width: 58px;
+            height: 58px;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            background-color: #ffffff;
+            padding: 20px;
+            cursor: pointer;
+        }
+        .ourtestcontainer {
+            .cardTesContainer {
+                max-width: 90%;
+            }
+        }
+    }
+}

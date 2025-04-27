@@ -1,0 +1,52 @@
+.sub-hero {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: #ffefe5;
+    gap: 13px;
+    border-radius: 12px;
+    border: 2px solid #262626;
+    padding-top: 24px;
+    /* padding-right: 50px; */
+    padding-bottom: 24px;
+    /* padding-left: 50px; */
+    box-shadow: 10px 10px 0px 0 #ff8e4db4;
+    .sub-h-info {
+        span {
+            display: block;
+            text-align: center;
+            font-size: 44px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .name {
+            font-size: 16px;
+            margin: 0;
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+}
+@media screen and (max-width: 1439px) {
+    .sub-hero {
+        flex-direction: column;
+        padding: 0 20px;
+        width: 50%;
+        margin: 60px auto 0;
+        height: 400px;
+        /* height: 400px; */
+        .sub-h-info:not(:last-of-type) {
+            margin-bottom: 15px;
+            padding-bottom: 20px;
+            border-bottom: 1.5px solid #262626;
+        }
+    }
+}
+@media screen and (max-width: 765px) {
+    .sub-hero {
+        width: 100%;
+    }
+}

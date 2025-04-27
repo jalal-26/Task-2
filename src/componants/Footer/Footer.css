@@ -1,0 +1,147 @@
+.footer {
+    background: #ffffff;
+    color: #333;
+    min-height: 50vh;
+    padding: 30px 80px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #262626;
+    border-radius: 12px;
+    margin: 200px auto 50px;
+    box-shadow: 6px 6px 0px 2px #1e1e1e;
+    .footer-main-content {
+        margin: 40px auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .brand-section {
+            flex: 1 1 300px;
+            .logo {
+                display: flex;
+                gap: 5px;
+                h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                    color: #262626;
+                }
+            }
+            .description {
+                line-height: 1.6;
+                color: #1e1e1e;
+                margin-bottom: 1.5rem;
+            }
+            .contact-info {
+                p {
+                    margin: 0.5rem 0;
+                    color: #262626;
+                }
+                div {
+                    display: flex;
+                    gap: 5px;
+                    margin-bottom: 10px;
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 35px;
+                        height: 35px;
+                        background-color: #ffdecc;
+                        border: 2px solid #262626;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+        .main-links {
+            flex: 2 1 700px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            .link-column {
+                flex: 1 1 150px;
+                h4 {
+                    font-size: 1.1rem;
+                    margin-bottom: 1rem;
+                    color: #262626;
+                    padding-bottom: 0.5rem;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                li {
+                    margin-bottom: 0.5rem;
+                }
+                a {
+                    color: #333333;
+                    text-decoration: none;
+                    transition: color 0.3s;
+                }
+            }
+        }
+    }
+    .legal-section {
+        padding: 1rem;
+        text-align: center;
+        .linksAndSocial {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 2px solid #262626;
+            border-bottom: 2px solid #262626;
+            padding: 40px 0;
+            .legal-links {
+                a {
+                    color: #333333;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                }
+                span {
+                    color: #262626;
+                    margin: 0 5px;
+                }
+            }
+            .socialMidia {
+                display: flex;
+                gap: 15px;
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 56px;
+                    height: 56px;
+                    background-color: #ffdecc;
+                    border: 2px solid #262626;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .copyright {
+            font-size: 18px;
+            color: #656567;
+            margin: 50px 0 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .footer {
+        padding: 0;
+        text-align: center;
+        .legal-section {
+            .linksAndSocial {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        .footer-main-content {
+            .brand-section {
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+/* .legal-links a:hover {
+    text-decoration: underline;
+} */

@@ -1,0 +1,32 @@
+.title-container {
+    text-align: center;
+    margin: 10% auto 5%;
+    .the-second {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        border: 2px solid black;
+        border-radius: 8px;
+        display: inline-block;
+        font-size: 18px;
+        color: #333333;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .the-main {
+        font-size: 260%;
+        margin: 2% auto;
+    }
+    .the-third {
+        margin: 0 auto;
+        width: 90%;
+        color: #333333;
+        line-height: 1.5;
+        font-size: 120%;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,280 @@
+/* Header.css */
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* Basic font */
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: inherit;
+    /* Inherit text color */
+}
+
+ul {
+    list-style: none;
+    /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* Header container */
+.header-container {
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Top Announcement Bar */
+.top-bar {
+    /* Approximate gradient from the image */
+    background: linear-gradient(90deg, #ffeadd, #fff7f0, #ffeadd);
+    padding: 8px 0;
+    /* Vertical padding */
+    border-radius: 8px 8px 0 0;
+    /* Rounded top corners */
+    border: 1px solid #e0e0e0;
+    /* Light border */
+    border-bottom: none;
+    /* No bottom border here */
+    overflow: hidden;
+    /* Hide potential overflow from decorative elements */
+    position: relative;
+    /* Needed for potential pseudo-elements */
+}
+
+.top-bar-content {
+    max-width: 1200px;
+    /* Limit content width */
+    margin: 0 auto;
+    /* Center content */
+    text-align: center;
+    /* Center text */
+    font-size: 0.9em;
+    color: #333;
+    position: relative;
+    /* For stacking context if using pseudo-elements */
+    z-index: 1;
+}
+
+/* --- Optional: Simple decorative elements using pseudo-elements --- */
+/* These are very basic representations */
+.top-bar::before,
+.top-bar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    /* Adjust size */
+    height: 50px;
+    /* Adjust size */
+    background-color: rgba(0, 0, 0, 0.05);
+    /* Light pattern color */
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.top-bar::before {
+    left: 10%;
+    /* Adjust position */
+    /* Example of a simple pattern - replace with actual design if needed */
+    background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.1) 62%);
+    background-size: 10px 10px;
+    /* Size of the pattern */
+
+}
+
+.top-bar::after {
+    right: 10%;
+    /* Adjust position */
+    /* Example of a simple pattern - replace with actual design if needed */
+    background: radial-gradient(circle, transparent 60%, rgba(0, 0, 0, 0.1) 62%);
+    background-size: 10px 10px;
+    /* Size of the pattern */
+}
+
+/* --- End Optional Decorative Elements --- */
+
+
+/* Main Navigation Bar */
+.main-nav {
+    background-color: #ffffff;
+    /* White background */
+    border: 1px solid #e0e0e0;
+    /* Light border */
+    border-top: 1px solid #ccc;
+    /* Separator line like in the image */
+    border-radius: 0 0 8px 8px;
+    /* Rounded bottom corners */
+}
+
+.nav-content {
+    max-width: 1200px;
+    /* Limit content width */
+    margin: 0 auto;
+    /* Center content */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space between logo and links */
+    align-items: center;
+    /* Vertically center items */
+    height: 65px;
+    /* Navigation bar height */
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    align-items: center;
+    background-color: #ff8c66;
+    /* Orange background */
+    padding: 0 25px;
+    /* Padding around the logo */
+    height: 100%;
+    /* Take full height of nav */
+    border-right: 1px solid #e0e0e0;
+    /* Separator line */
+    color: #333;
+    /* Darker text color for contrast */
+    border-radius: 0 0 0 8px;
+    /* Match bottom-left rounding */
+}
+
+.logo-icon {
+    margin-right: 8px;
+    /* Space between icon and text */
+    /* Adjust icon color if needed */
+    color: #333;
+}
+
+
+.logo-text {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    /* Lay out links horizontally */
+    height: 100%;
+    /* Take full height */
+}
+
+.nav-link {
+    display: flex;
+    /* To center text vertically */
+    align-items: center;
+    padding: 0 20px;
+    /* Padding inside each link */
+    height: 100%;
+    /* Take full height */
+    color: #555;
+    /* Link text color */
+    font-size: 0.95em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    /* Smooth hover effect */
+    border-left: 1px solid #e0e0e0;
+    /* Separator lines */
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    /* Light grey background on hover */
+    color: #000;
+    /* Darker text on hover */
+}
+
+/* Special style for the Contact link */
+.contact-link {
+    background-color: #ff8c66;
+    /* Orange background */
+    color: #333;
+    /* Darker text for contrast */
+    font-weight: 500;
+    border-left: 1px solid #e0e0e0;
+    /* Separator line */
+    border-radius: 0 0 8px 0;
+    /* Match bottom-right rounding */
+}
+
+.contact-link:hover {
+    background-color: #ff7043;
+    /* Slightly darker orange on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+/* Basic Responsiveness */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        /* Stack logo and links vertically */
+        height: auto;
+        /* Adjust height */
+        padding: 10px 0;
+    }
+
+    .logo-section {
+        width: 100%;
+        /* Take full width */
+        justify-content: center;
+        /* Center logo */
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        /* Add border below logo */
+        padding: 15px 0;
+        border-radius: 0;
+        /* Remove rounding on small screens */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        /* Stack links vertically */
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-link {
+        width: 100%;
+        justify-content: center;
+        /* Center text */
+        padding: 12px 0;
+        /* Adjust padding */
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
+        /* Add top border */
+    }
+
+    .nav-link:first-child {
+        border-top: none;
+        /* Remove top border for the first link */
+    }
+
+    .contact-link {
+        border-radius: 0 0 8px 8px;
+        /* Round bottom corners only on mobile */
+    }
+
+    .main-nav {
+        border-radius: 0 0 8px 8px;
+        /* Ensure bottom rounding is kept */
+    }
+
+    .top-bar-content {
+        padding: 0 15px;
+        /* Add padding on smaller screens */
+    }
+
+    .top-bar::before,
+    .top-bar::after {
+        display: none;
+        /* Hide decorative elements on small screens */
+    }
+}

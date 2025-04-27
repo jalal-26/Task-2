@@ -1,0 +1,70 @@
+.navidateContainer{
+
+    .cardsContainer{
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 50px 70px 50px;
+            text-align: center;
+            background-color: #FFFFFF;
+            border: 2px solid #262626;
+            border-radius: 12px;
+            gap: 40px;
+            box-shadow: 4px 4px 0px 2px #1E1E1E;
+            h1{
+                font-size: 35px;
+                margin: 0;
+            }
+            }
+            .text{
+                font-family: Outfit;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+            }
+            .learnMore{
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                align-items: center;
+                background-color: #FFDECC;
+                width: 80%;
+                height: 63px;
+                border: 2px solid #262626;
+                border-radius: 10px;
+                box-shadow: 4px 4px 0px 2px #1E1E1E;
+                font-size: 20px;
+                font-family: Outfit;
+                font-weight: 500;
+                .right1{
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+@media screen and (max-width:1438px) {
+    .navidateContainer{
+        .cardsContainer{
+            grid-template-columns: 1fr;
+            .card{
+                min-width: 300px;
+
+                .border{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
