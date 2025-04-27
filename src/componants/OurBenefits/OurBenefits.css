@@ -1,6 +1,5 @@
-
 .our-benefits{
-    /* width: 100%; */
+
     .card-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);

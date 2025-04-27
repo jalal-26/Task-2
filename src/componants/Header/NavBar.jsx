@@ -1,3 +1,5 @@
+import logo from "../../../public/assets/img/logo.svg"
+import navBtn from "../../../public/assets/img/navBtn.svg"
 import { useState, useEffect } from "react";
 function NavBar({ links }) {
     const [active, setActive] = useState(null);
@@ -21,7 +23,7 @@ function NavBar({ links }) {
     return (
         <div className="nav-bar">
             <div className="logo">
-                <img src="/assets/img/logo.svg" alt="" />
+                <img src={logo} alt="" />
                 <p>Little learners</p>
             </div>
             {isLargeScreen ? (
@@ -51,7 +53,7 @@ function NavBar({ links }) {
                     onClick={() => setmobileMenuOpen(!mobileMenuOpen)}
                     className="nav-btn"
                 >
-                    <img src="/assets/img/navBtn.svg" alt="" />
+                    <img src={navBtn} alt="" />
                 </button>
             )}
             {mobileMenuOpen && (

@@ -92,9 +92,6 @@ function CardTestimonials({ src, name, star, opinin }) {
 
 function getVisibleSlides() {
     const width = window.innerWidth;
-    // {
-    //     width > 1440 ? 3 : 1;
-    // }
     if (width >= 1441) {
         return 3;
     } else {
@@ -114,7 +111,6 @@ function OutTestimonials() {
     });
 
     const nextSlide = () => {
-        // setIndex((prevIndex) => (prevIndex + 1) % cardInfoh.length);
         if (index + visibleSlides >= cardInfoh.length) {
             setIndex(0);
         } else {
@@ -129,12 +125,6 @@ function OutTestimonials() {
             setIndex(index - 1);
         }
     };
-
-    // const getVisibleSlides = () => {
-    //     const screenWidth = window.innerWidth;
-    //     const slidesToShow = screenWidth > 1440 ? 3 : 1;
-    //     return cardInfoh.slice(index, index + slidesToShow);
-    // };
     return (
         <div className="outTestimonials">
             <TheTitle

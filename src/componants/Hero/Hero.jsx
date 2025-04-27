@@ -1,10 +1,11 @@
 import SubHero from "./SubHero/SubHero"
+import heroImage from "../../../public/assets/img/HeroImage.png"
 import "./Hero.css"
 function Hero() {
     return (
         <div className="hero-container">
             <div className="img">
-                <img src="/assets/img/HeroImage.png" alt="" />
+                <img src={heroImage} alt="" />
             </div>
             <div className="info">
                 <p className="welcome">Welcome to Little Learners Academy</p>
